@@ -17,7 +17,7 @@ function City() {
     notes: "My favorite city so far!",
   };
 
-  const { cityName, emoji, date, notes } = currentCity;
+  const {cityName, emoji, date, notes} = currentCity;
 
   return (
     <div className={styles.city}>
@@ -42,11 +42,7 @@ function City() {
 
       <div className={styles.row}>
         <h6>Learn more</h6>
-        <a
-          href={`https://en.wikipedia.org/wiki/${cityName}`}
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={`https://en.wikipedia.org/wiki/${cityName}`} target='_blank' rel='noreferrer'>
           Check out {cityName} on Wikipedia &rarr;
         </a>
       </div>
