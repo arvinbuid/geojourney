@@ -21,7 +21,8 @@ function City() {
 
   return (
     <div className={styles.city}>
-      <div className={styles.row}>
+      CITY
+      {/* <div className={styles.row}>
         <h6>City name</h6>
         <h3>
           <span>{emoji}</span> {cityName}
@@ -49,7 +50,7 @@ function City() {
 
       <div>
         <ButtonBack />
-      </div>
+      </div> */}
     </div>
   );
 }
