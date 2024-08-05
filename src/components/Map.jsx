@@ -6,11 +6,9 @@ import {useCities} from "../contexts/CitiesContext";
 import {flagemojiToPNG} from "../helpers/Helpers";
 
 function Map() {
-  const [mapPosition, setMapPosition] = useState([51.51, 0.12]);
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  const navigate = useNavigate();
   const {cities} = useCities();
+  const [mapPosition, setMapPosition] = useState([51.51, 0.12]);
+  const [searchParams] = useSearchParams();
 
   let mapLat = searchParams.get("lat");
   let mapLng = searchParams.get("lng");
@@ -22,6 +20,7 @@ function Map() {
 
   return (
     <div className={styles.mapContainer}>
+      
       <MapContainer
         center={mapPosition}
         // center={[mapLat, mapLng]}
