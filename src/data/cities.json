@@ -1,40 +1,76 @@
 {
   "cities": [
-      {
-        "cityName": "Lisbon",
-        "country": "Portugal",
-        "emoji": "🇵🇹",
-        "date": "2027-10-31T15:59:59.138Z",
-        "notes": "My favorite city so far!",
-        "position": {
-          "lat": 38.727881642324164,
-          "lng": -9.140900099907554
-        },
-        "id": 73930385
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.727881642324164,
+        "lng": -9.140900099907554
       },
-      {
-        "cityName": "Madrid",
-        "country": "Spain",
-        "emoji": "🇪🇸",
-        "date": "2027-07-15T08:22:53.976Z",
-        "notes": "",
-        "position": {
-          "lat": 40.46635901755316,
-          "lng": -3.7133789062500004
-        },
-        "id": 17806751
+      "id": "73930385"
+    },
+    {
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.46635901755316,
+        "lng": -3.7133789062500004
       },
-      {
-        "cityName": "Berlin",
-        "country": "Germany",
-        "emoji": "🇩🇪",
-        "date": "2027-02-12T09:24:11.863Z",
-        "notes": "Amazing 😃",
-        "position": {
-          "lat": 52.53586782505711,
-          "lng": 13.376933665713324
-        },
-        "id": 98443197
+      "id": "17806751"
+    },
+    {
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "Amazing 😃",
+      "position": {
+        "lat": 52.53586782505711,
+        "lng": 13.376933665713324
+      },
+      "id": "98443197"
+    },
+    {
+      "id": "1410",
+      "cityName": "Imus",
+      "country": "Philippines (the)",
+      "emoji": "🇵🇭",
+      "date": "2024-08-05T09:56:45.720Z",
+      "notes": "Warm weather but I was having fun with friends.",
+      "position": {
+        "lat": "14.425578255174619",
+        "lng": "120.93686410271654"
       }
+    },
+    {
+      "id": "e98c",
+      "cityName": "Handan",
+      "country": "China",
+      "emoji": "🇨🇳",
+      "date": "2024-08-05T09:59:06.592Z",
+      "notes": "Bing Chiling",
+      "position": {
+        "lat": "36.66841891893213",
+        "lng": "114.76002352172186"
+      }
+    },
+    {
+      "id": "e920",
+      "cityName": "Trece Martires City",
+      "country": "Philippines (the)",
+      "emoji": "🇵🇭",
+      "date": "2024-08-05T11:12:36.234Z",
+      "notes": "My homecity",
+      "position": {
+        "lat": "14.279023075062167",
+        "lng": "120.87095925876932"
+      }
+    }
   ]
 }
