@@ -6,11 +6,11 @@ import {useCities} from "../contexts/CitiesContext";
 import {flagemojiToPNG} from "../helpers/Helpers";
 import {useGeolocation} from "../hooks/useGeolocation";
 import Button from "./Button";
+import {useUrlPosition} from "../hooks/useUrlPosition";
 
 function Map() {
   const {cities} = useCities();
   const [mapPosition, setMapPosition] = useState([14.2893437, 120.9098051]);
-  const [searchParams] = useSearchParams();
 
   // useGeolocation custom hook
   const {
@@ -19,8 +19,8 @@ function Map() {
     getPosition,
   } = useGeolocation();
 
-  let mapLat = searchParams.get("lat");
-  let mapLng = searchParams.get("lng");
+  // useUrlPosition custom hook
+  const [mapLat, mapLng] = useUrlPosition();
 
   // synchronize mapPosition with mapLat, mapLng
   useEffect(() => {
