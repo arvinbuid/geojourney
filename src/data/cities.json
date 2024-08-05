@@ -35,18 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
-    },
-    {
-      "id": "c316",
-      "cityName": "Bacoor",
-      "country": "Philippines (the)",
-      "emoji": "🇵🇭",
-      "date": "2024-07-31T14:43:33.000Z",
-      "notes": "Warm weather.",
-      "position": {
-        "lat": "14.453547933208302",
-        "lng": "120.95874309539796"
-      }
     }
   ]
 }
