@@ -71,6 +71,42 @@
         "lat": "14.279023075062167",
         "lng": "120.87095925876932"
       }
+    },
+    {
+      "id": "b563",
+      "cityName": "Tokyo",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2024-08-05T11:24:10.777Z",
+      "notes": "I love Tokyo. My dream place to visit",
+      "position": {
+        "lat": "35.639441068973944",
+        "lng": "139.34390205701797"
+      }
+    },
+    {
+      "id": "1c07",
+      "cityName": "Funabashi",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2024-08-05T11:25:58.616Z",
+      "notes": "I would love to go here",
+      "position": {
+        "lat": "35.782170703266075",
+        "lng": "140.07568359375003"
+      }
+    },
+    {
+      "id": "62d0",
+      "cityName": "Tura",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2024-08-05T11:27:53.010Z",
+      "notes": "Suka Blyat",
+      "position": {
+        "lat": "66.08936427047088",
+        "lng": "99.31640625000001"
+      }
     }
   ]
 }
