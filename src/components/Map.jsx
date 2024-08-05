@@ -9,7 +9,7 @@ import Button from "./Button";
 
 function Map() {
   const {cities} = useCities();
-  const [mapPosition, setMapPosition] = useState([51.51, 0.12]);
+  const [mapPosition, setMapPosition] = useState([14.2893437, 120.9098051]);
   const [searchParams] = useSearchParams();
 
   // useGeolocation custom hook
