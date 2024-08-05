@@ -4,23 +4,41 @@ import {MapContainer, Marker, Popup, TileLayer, useMap, useMapEvents} from "reac
 import {useEffect, useState} from "react";
 import {useCities} from "../contexts/CitiesContext";
 import {flagemojiToPNG} from "../helpers/Helpers";
+import {useGeolocation} from "../hooks/useGeolocation";
+import Button from "./Button";
 
 function Map() {
   const {cities} = useCities();
   const [mapPosition, setMapPosition] = useState([51.51, 0.12]);
   const [searchParams] = useSearchParams();
 
+  // useGeolocation custom hook
+  const {
+    isLoading: isLoadingPosition,
+    position: geolocationPosition,
+    getPosition,
+  } = useGeolocation();
+
   let mapLat = searchParams.get("lat");
   let mapLng = searchParams.get("lng");
 
-  // synchronize mapPosition & mapLat, mapLng
+  // synchronize mapPosition with mapLat, mapLng
   useEffect(() => {
     if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
   }, [mapLat, mapLng]);
 
+  // synchronize geolocationPosition with mapPosition
+  useEffect(() => {
+    if (geolocationPosition) setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+  }, [geolocationPosition]);
+
   return (
     <div className={styles.mapContainer}>
-      
+      {!geolocationPosition && (
+        <Button type='position' onClick={getPosition}>
+          {isLoadingPosition ? "Loading..." : "Use your position"}
+        </Button>
+      )}
       <MapContainer
         center={mapPosition}
         // center={[mapLat, mapLng]}
