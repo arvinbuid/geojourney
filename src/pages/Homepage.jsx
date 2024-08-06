@@ -16,7 +16,7 @@ export default function Homepage() {
           A world map that tracks your footsteps through every city you can think of. Never forget
           your amazing adventures, and show friends how you&apos;ve traveled the world.
         </h2>
-        <Link to='/app' className='cta'>
+        <Link to='/login' className='cta'>
           Start tracking now
         </Link>
       </section>

@@ -35,18 +35,6 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
-    },
-    {
-      "id": "4f97",
-      "cityName": "Tokyo",
-      "country": "Japan",
-      "emoji": "🇯🇵",
-      "date": "2024-08-06T00:52:14.061Z",
-      "notes": "Amazing trip. I also meet cosplayers on the way.",
-      "position": {
-        "lat": "35.64836915737426",
-        "lng": "139.5032378747325"
-      }
     }
   ]
 }
