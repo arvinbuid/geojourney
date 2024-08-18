@@ -9,7 +9,6 @@ export default function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("johndoe@example.com");
   const [password, setPassword] = useState("qwerty");
-
   const {login, isAuthenticated} = useAuth();
 
   function handleSubmit(e) {

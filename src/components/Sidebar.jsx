@@ -2,21 +2,21 @@ import {Outlet} from "react-router-dom";
 import AppNav from "./AppNav";
 import Logo from "./Logo";
 import styles from "./Sidebar.module.css";
+import {HiXMark} from "react-icons/hi2";
 
-function Sidebar() {
+function Sidebar({isSidebarOpen, setIsSidebarOpen}) {
   return (
-    <div className={styles.sidebar}>
-      <Logo />
-      <AppNav />
+    <aside className={`${isSidebarOpen ? styles["sidebar-open"] : ""}`}>
+      <div className={styles.sidebar}>
+        <Logo />
+        <AppNav />
+        <Outlet />
 
-      <Outlet />
-
-      <footer className={styles.footer}>
-        <p className={styles.copyright}>
-          &copy; Copyright {new Date().getFullYear()} by GeoJourney Inc.
-        </p>
-      </footer>
-    </div>
+        <button className={styles["sidebar-icon"]} onClick={() => setIsSidebarOpen(false)}>
+          <HiXMark />
+        </button>
+      </div>
+    </aside>
   );
 }
 
