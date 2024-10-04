@@ -59,7 +59,7 @@ a.ctaLink:visited {
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    transition: all 0.5s ease-in;
+    transition: transform opacity 0.5s ease-in;
 
     opacity: 0;
     pointer-events: none;

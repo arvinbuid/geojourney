@@ -39,6 +39,10 @@
 @media (max-width: 64em) {
   .login {
     margin: 0;
-    height: 100vh;
+  }
+
+  .form {
+    width: 60%;
+    margin: 8rem auto;
   }
 }
