@@ -10,7 +10,7 @@ export default function Homepage() {
         <h1>
           You travel the world.
           <br />
-          GeoJourney keeps track of all your adventures.
+          Worldwise keeps track of all your adventures.
         </h1>
         <h2>
           A world map that tracks your footsteps through every city you can think of. Never forget
